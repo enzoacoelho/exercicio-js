@@ -17,55 +17,38 @@ const usuarioInvalido = {
 }
 
 // DESAFIO
-// Implemente esta função para verificar se o usuário é maior de idade.
-//
-// Regras:
-// - Deve retornar true se a idade for maior ou igual a 18
-// - Caso contrário, retornar false
-//
-// Exemplo:
-// verificarMaiorIdade(20) -> true
-// verificarMaiorIdade(15) -> false
 function verificarMaiorIdade(idade) {
-  return idade >= 18
+  if (idade >= 18) {
+    return true
+  } else {
+    return false
+  }
+
 }
 
-// Função pronta
-// Esta função verifica se o email possui o caractere "@"
+// DESAFIO
 function validarEmail(email) {
   return email.includes("@")
 }
 
 // DESAFIO
-// Implemente esta função para verificar se o usuário está ativo.
-//
-// Regras:
-// - Deve retornar true se o usuário estiver ativo
-// - Caso contrário, retornar false
-//
-// Dica: utilize a propriedade "ativo" do objeto usuário
 function usuarioAtivo(usuario) {
-  return usuario.ativo
+  if (usuario.ativo === true) {
+    return true
+  } else {
+    return false
+  }
 }
 
-// Esta função combina todas as validações do cadastro
-// Ela só retorna true se TODAS as regras forem válidas
 function validarCadastro(usuario) {
 
   const maiorIdade = verificarMaiorIdade(usuario.idade)
   const emailValido = validarEmail(usuario.email)
   const ativo = usuarioAtivo(usuario)
 
-  // operador lógico AND (&&)
-  // todas as condições precisam ser verdadeiras
   return maiorIdade && emailValido && ativo
 }
 
-// Execução no console para validar o exercício
-// Após implementar as funções, execute:
-//
-// node usuario.js
-//
 // Resultado esperado:
 // Usuário 1 válido? true
 // Usuário 2 válido? false
