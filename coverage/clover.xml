@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1774990964404" clover="3.2.0">
+  <project timestamp="1774990964406" name="All files">
+    <metrics statements="14" coveredstatements="14" conditionals="7" coveredconditionals="7" methods="4" coveredmethods="4" elements="25" coveredelements="25" complexity="0" loc="14" ncloc="14" packages="1" files="1" classes="1"/>
+    <file name="usuario.js" path="C:\CURSO\exercicio-js\src\usuario.js">
+      <metrics statements="14" coveredstatements="14" conditionals="7" coveredconditionals="7" methods="4" coveredmethods="4"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="21" count="19" type="cond" truecount="2" falsecount="0"/>
+      <line num="22" count="10" type="stmt"/>
+      <line num="24" count="9" type="stmt"/>
+      <line num="31" count="18" type="stmt"/>
+      <line num="36" count="18" type="cond" truecount="2" falsecount="0"/>
+      <line num="37" count="9" type="stmt"/>
+      <line num="39" count="9" type="stmt"/>
+      <line num="45" count="16" type="stmt"/>
+      <line num="46" count="16" type="stmt"/>
+      <line num="47" count="16" type="stmt"/>
+      <line num="49" count="16" type="cond" truecount="3" falsecount="0"/>
+      <line num="52" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

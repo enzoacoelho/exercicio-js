@@ -49,16 +49,6 @@ function validarCadastro(usuario) {
   return maiorIdade && emailValido && ativo
 }
 
-// Resultado esperado:
-// Usuário 1 válido? true
-// Usuário 2 válido? false
-
-console.log("Usuário 1 válido?", validarCadastro(usuario))
-console.log("Usuário 2 válido?", validarCadastro(usuarioInvalido))
-
-// NÃO ALTERAR
-// Essas exportações serão usadas no próximo módulo
-// para criar testes automatizados com Jest
 module.exports = {
   verificarMaiorIdade,
   validarEmail,
